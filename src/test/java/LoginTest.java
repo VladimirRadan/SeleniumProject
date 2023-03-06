@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest{
 
     @Test
     public void loginTestByText() {
-
+        driver.get("https://the-internet.herokuapp.com/login");
         typeIn(usernameField, "tomsmith");
         typeIn(passwordField, "SuperSecretPassword!");
         clickOnElement(loginButton);
@@ -40,7 +40,7 @@ public class LoginTest extends BaseTest{
 
     @Test
     public void loginTestByColor(){
-
+        driver.get("https://the-internet.herokuapp.com/login");
         typeIn(usernameField, "tomsmith");
         typeIn(passwordField, "SuperSecretPassword!");
         clickOnElement(loginButton);

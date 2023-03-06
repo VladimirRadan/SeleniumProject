@@ -6,6 +6,14 @@ public class Utils {
         return System.currentTimeMillis() + "@email.com";
     }
 
+    public static void waitForSeconds(double seconds) {
+        try {
+            Thread.sleep((long)(seconds * 1000));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 

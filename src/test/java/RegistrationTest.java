@@ -17,7 +17,7 @@ public class RegistrationTest extends BaseTest{
     By registerButton = By.xpath("//input[@id='register-button']");
 
     By welcomePageText = By.cssSelector(".page-body .result");
-    By continueButton = By.cssSelector("input[value='Cont']");
+    By continueButton = By.cssSelector("input[value*='Cont']");
 
 
     // /html/body/div[2]/div/div/form/div[1]/div/input // apsolutna putanja
